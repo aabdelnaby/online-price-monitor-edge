@@ -19,13 +19,13 @@ def check_price():
 #cost of product is taken from html sting and reassigned  into price as a float
     price = float(cost[1:4])
 
-    if price<374:
+    if price<620:
         send_mail_down()
 
-    if price>374:
+    if price>620:
         send_mail_up()
 
-    if price==374:
+    if price==620:
         send_mail_same()
 
 
